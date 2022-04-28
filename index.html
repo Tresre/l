@@ -33,10 +33,7 @@ html {
 
 <script>
 function encode() {
-  let input = prompt("Issue");
-  input += 10;
-  var output = btoa(input);
-  output = output.replace(/=/g, " ");
+  var output = btoa(parseInt(prompt("Issue")) + (10)).replace(/=/g, " ");
   alert(output);
 }
 </script>
