@@ -22,12 +22,22 @@ html {
 }
 </style>
 <br><br><br>
-	<head>
-		<title>Missing Page</title>
-	</head>
-	<body>
-		<a class="title">ERROR 404</a>
-        <br><br>
-		<a class="message">It doesn't seem like I put a page at this link. Maybe try asking me for a different link?<br><br>:p</a>
-	</body>
+<head>
+	<title>Missing Page</title>
+</head>
+<body>
+	<a class="title">ERROR 404</a>
+	<br><br>
+	<a class="message">It doesn't seem like I put a page at this link. Maybe try asking me for a different link?	<br><br><p onclick="encode()">:p</p></a>
+</body>
+
+<script>
+function encode() {
+  let input = prompt("Issue");
+  var output = btoa(input);
+  output = output.replace(/=/g, " ");
+  alert(output);
+}
+</script>
+
 </html>
