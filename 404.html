@@ -27,7 +27,7 @@
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
-        var issueNumber = btoa(issueNumber);
+        var issueNumber = parseInt(atob(issueNumber)) - (10);
         issueNumber -= 10;
         var homepage =
           location.protocol +
