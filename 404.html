@@ -27,8 +27,8 @@
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
-        var issueDecode = String(issueNumber);
-        var issueNumbers = parseInt(atob(decodeURIComponent(issueDecode))) - (10);
+        var issueDecode = parseInt(issueNumber);
+        var issueNumbers = atob(issueDecode) - (10);
         console.log(issueNumber);
         var homepage =
           location.protocol +
