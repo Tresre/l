@@ -11,4 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: mark-duplicate
-        uses: Tresre/l@main
+      - uses: Tresre/l@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
