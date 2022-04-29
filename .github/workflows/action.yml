@@ -1,13 +1,15 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'PR Metadata Action'
+description: 'Adds pull request file changes as a comment to a newly opened PR'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  repo:
+    description: 'The name of the repository'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  issue_number:
+    description: 'The number of the issue'
+    required: true
+  token:
+    description: 'The token to use to access the GitHub API'
+    required: true
 runs:
   using: 'node16'
   main: 'index.js'
