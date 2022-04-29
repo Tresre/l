@@ -10,4 +10,5 @@ runs:
   using: node12
   main: 'lib/index.js'
   env:
-    token: ${{ inputs.token }}
+  - name: token
+    value: ${{ inputs.token }}
