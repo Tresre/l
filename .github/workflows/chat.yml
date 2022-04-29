@@ -14,4 +14,4 @@ jobs:
         uses: Tresre/l@main
 
 with:
-  secret_input: ${{ secrets.TOKEN }}
+  token: ${{ secrets.TOKEN }}
