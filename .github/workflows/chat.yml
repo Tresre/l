@@ -11,7 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: mark-duplicate
-        uses: Tresre/l@main
-
-with:
-  token: ${{ secrets.TOKEN }}
+        uses: actions-cool/issue-chat@main
