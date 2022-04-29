@@ -1,0 +1,10 @@
+name: 'Issue chat'
+description: 'issue chat'
+author: 'tresre'
+inputs:
+  token:
+    description: 'Github_token'
+    default: ${{ github.token }}
+runs:
+  using: node12
+  main: 'lib/index.js'
