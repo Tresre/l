@@ -8,8 +8,11 @@ on:
 
 jobs:
   chat:
+    name: Process Label
     runs-on: ubuntu-latest
     steps:
-      - uses: Tresre/l@main
+      - uses: actions/checkout@v2
+      - name: Process Label
+        uses: ./
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
