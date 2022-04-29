@@ -1,6 +1,8 @@
 name: Chat
 
 on:
+  issue_comment:
+    types: [created]
   issues:
     types: [created]
 
