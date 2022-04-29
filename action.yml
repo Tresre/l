@@ -4,7 +4,8 @@ author: 'tresre'
 inputs:
   token:
     description: 'Github_token'
-    default: ${{ secrets.GITHUB_TOKEN }}
+    env:
+      default: ${{ secrets.GITHUB_TOKEN }}
 runs:
   using: node12
   main: 'lib/index.js'
