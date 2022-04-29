@@ -1,14 +1,13 @@
 name: 'Issue chat'
 description: 'issue chat'
-author: 'tresre'
+author: 'Tresre'
+branding:
+  icon: 'message-square'
+  color: 'black'
 inputs:
   token:
     description: 'Github_token'
-    required: true
-
+    default: ${{ github.token }}
 runs:
   using: node12
   main: 'lib/index.js'
-  env:
-  - name: token
-    value: ${{ inputs.token }}
