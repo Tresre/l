@@ -9,6 +9,6 @@ inputs:
 runs:
   using: node12
   main: 'lib/index.js'
-  - name: token
+  name: token
     env:
       token: ${{ inputs.token }}
