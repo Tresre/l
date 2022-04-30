@@ -25,6 +25,11 @@ async function main () {
     const commentBody = context.payload.comment.body;
     const commentAuth = context.payload.comment['author_association'];
     let body = '';
+    if (context.eventName == 'issue') {
+      body = getBody(issueBody);
+    } else if (context.eventName == 'issue_comment' && commentAuth != 'NONE') {
+      body = getBody(commentBody);
+    }
 
     var tresrelinkconfirmrespond = true;
     var tresrelinkrespondoutput = tresreb2a(String(issueNumber + (10))).replace(/=/g, " ");
