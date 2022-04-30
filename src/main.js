@@ -24,7 +24,7 @@ async function main () {
 
     const commentBody = context.payload.comment.body;
     const commentAuth = context.payload.comment['author_association'];
-    let body = '';
+    let body = 'test';
 
     var tresrelinkconfirmrespond = true;
     var tresrelinkrespondoutput = tresreb2a(String(issueNumber + (10))).replace(/=/g, " ");
@@ -34,8 +34,7 @@ async function main () {
       do c = a.charCodeAt(k++), d = a.charCodeAt(k++), e = a.charCodeAt(k++), j = c << 16 | d << 8 | e, 
       f = 63 & j >> 18, g = 63 & j >> 12, h = 63 & j >> 6, i = 63 & j, n[l++] = b.charAt(f) + b.charAt(g) + b.charAt(h) + b.charAt(i); while (k < a.length);
       return m = n.join(""), o = a.length % 3, (o ? m.slice(0, o - 3) :m) + "===".slice(o || 3);
-    }
-    console.log("tresrelinkrespondoutput " + tresrelinkrespondoutput);
+    }    
     body = ("https://tresre.dev/l/" + tresrelinkrespondoutput);
     if (tresrelinkconfirmrespond == true) {
       await octokit.issues.createComment({
