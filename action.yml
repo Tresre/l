@@ -1,6 +1,5 @@
 name: 'Issue chat'
-description: 'issue responder'
-author: 'Tresre'
+description: 'Issue responder'
 branding:
   icon: 'bookmark'
   color: 'blue'
