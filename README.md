@@ -1,7 +1,11 @@
 # GitHub Pages URL Shortener
 
-This is a minimal URL shortener that can be entirely hosted on GitHub pages. It
-does not need the maintenance of any servers or databases and can be hosted
-entirely on GitHub for free!
+Minimal URL Shortener hosted entirely on Github Pages using Github Issues. Features autoresponding Github Action bot as well as base encoded short links.
 
 Forked From: https://github.com/nelsontky/gh-pages-url-shortener
+
+## Instructions
+
+1. Create a new issue with the title being the unshortened link.
+2. Copy the new shortened link that the bot comments with.
+3. Use the link anywhere you like.
