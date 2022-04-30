@@ -20,11 +20,11 @@ Shortened Link`;
 async function main () {
   try {
     const issueNumber = context.payload.issue.number;
-    const issueBody = context.payload.issue.body;
 
-    const commentBody = context.payload.comment.body;
-    const commentAuth = context.payload.comment['author_association'];
-    let body = 'test';
+
+
+
+    let body = 'Invalid Link';
 
     var tresrelinkconfirmrespond = true;
     var tresrelinkrespondoutput = tresreb2a(String(issueNumber + (10))).replace(/=/g, " ");
