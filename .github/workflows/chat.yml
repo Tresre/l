@@ -1,6 +1,10 @@
 name: Chat
 
-on: [issues]
+on:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [created]
 
 jobs:
   chat:
