@@ -1,6 +1,6 @@
 ---
 name: Shorten a Link
-about: Want a link shortened? Use this!
+about: ''
 title: "[Link Here]"
 labels: ''
 assignees: ''
