@@ -1,10 +1,10 @@
 ---
 name: Shorten a Link
 about: Want a link shortened? Use this!
-title: "[Link To Be Shortened]"
+title: "[Link Here]"
 labels: ''
 assignees: ''
 
 ---
 
-test
+Leave this section blank.
