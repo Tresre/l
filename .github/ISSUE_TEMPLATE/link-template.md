@@ -1,6 +1,6 @@
 ---
 name: Shorten a Link
-about: 'Want to shorten a link? Use this!'
+about: 'Input a long link and get a shorter link to use anywhere!'
 title: "[Link Here]"
 labels: ''
 assignees: ''
