@@ -6,5 +6,3 @@ labels: ''
 assignees: ''
 
 ---
-
-Leave this section blank.
